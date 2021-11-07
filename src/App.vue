@@ -19,6 +19,8 @@ import Footer from './components/Footer.vue'
 \:root
   --container-width: 1440px
   --container-max-width: calc(100vw - 20px)
+html
+  scroll-behavior: smooth
 body
   font-family: 'Noto Sans TC', sans-serif
   box-sizing: border-box

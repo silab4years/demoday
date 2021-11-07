@@ -10,6 +10,9 @@
     text-align: center
     margin-top: 48px
     margin-bottom: -48px
+    @media (max-width: 768px)
+        margin-top: 16px
+        margin-bottom: 16px
     .agenda-title
         font-size: 36px
         font-weight: bold
@@ -20,4 +23,6 @@
         border-radius: 100em
         display: inline-block
         margin: 0 auto
+        @media (max-width: 768px)
+            font-size: 18px
 </style>

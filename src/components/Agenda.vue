@@ -27,7 +27,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
             <template v-slot:name>疫情下的衝擊與轉變 </template>
             <template v-slot:spaker>陳文良</template>
           </Agenda-item>
-          <Agenda-item background-color="#E6E6E6">
+          <Agenda-item background-color="#E6E6E6" intermission>
             <template v-slot:time>12:00-13:30</template>
             <template v-slot:name>午餐/休息 </template>
           </Agenda-item>
@@ -47,7 +47,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
               Chris｜公益自律聯盟
             </template>
           </Agenda-item>
-          <Agenda-item background-color="#E6E6E6">
+          <Agenda-item background-color="#E6E6E6" intermission>
             <template v-slot:time>14:50-15:00</template>
             <template v-slot:name>中場休息 </template>
           </Agenda-item>
@@ -67,7 +67,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
               蔡威德 坪感覺
             </template>
           </Agenda-item>
-          <Agenda-item background-color="#E6E6E6">
+          <Agenda-item background-color="#E6E6E6" intermission>
             <template v-slot:time>16:20-16:30</template>
             <template v-slot:name>中場休息 </template>
           </Agenda-item>
@@ -88,7 +88,68 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
       </div>
       <div class="agenda-date-item" id="date-11-27">
         <div class="border-item"></div>
-        <div class="agenda-container"></div>
+        <div class="agenda-container">
+          <Agenda-item background-color="#4CE7FF">
+            <template v-slot:time>11:00-12:00</template>
+            <template v-slot:name>Buying Power 有責ㄗㄜˊ商行 </template>
+            <template v-slot:spaker>侯家楷 KPMG</template>
+          </Agenda-item>
+          <Agenda-item background-color="#E6E6E6" intermission>
+            <template v-slot:time>12:00-13:30</template>
+            <template v-slot:name>午餐/休息 </template>
+          </Agenda-item>
+
+          <Agenda-title>台灣暖實力 Demo Show</Agenda-title>
+          <Agenda-item background-color="#FFC817" event-type="online" min-height="150px">
+            <template v-slot:time>13:30-13:50</template>
+            <template v-slot:name>開場引言　主持人引言</template>
+            <template v-slot:spaker>吳宗昇</template>
+          </Agenda-item>
+          <Agenda-item background-color="#FFC817" event-type="online" min-height="150px">
+            <template v-slot:time>13:50-14:50</template>
+            <template v-slot:name>台灣暖實力　keynote 分享</template>
+            <template v-slot:spaker>
+              魏如君｜手語翻譯協會<br />
+              陳世芃｜雞湯來了<br />
+              李如寶｜Foodeast<br />
+              郭家佑｜台灣數位外交協會
+            </template>
+          </Agenda-item>
+          <Agenda-item background-color="#E6E6E6" intermission>
+            <template v-slot:time>14:50-15:00</template>
+            <template v-slot:name>中場休息 </template>
+          </Agenda-item>
+
+          <Agenda-title>循環經濟 Demo Show</Agenda-title>
+          <Agenda-item background-color="#FFC817" event-type="online" min-height="150px">
+            <template v-slot:time>15:00-15:20</template>
+            <template v-slot:name>開場引言　主持人引言</template>
+            <template v-slot:spaker>吳宗昇</template>
+          </Agenda-item>
+          <Agenda-item background-color="#FFC817" event-type="online" min-height="150px">
+            <template v-slot:time>15:20-16:20</template>
+            <template v-slot:name>循環經濟　keynote 分享</template>
+            <template v-slot:spaker>
+              楊孟泰｜Earth Friend<br />
+              葉德偉｜配客嘉<br />
+              黃暐程｜奉茶行動
+            </template>
+          </Agenda-item>
+          <Agenda-item background-color="#E6E6E6" intermission>
+            <template v-slot:time>16:20-16:30</template>
+            <template v-slot:name>中場休息 </template>
+          </Agenda-item>
+          <Agenda-item background-color="#4CE7FF" event-type="live" min-height="150px">
+            <template v-slot:time>16:30-18:30 </template>
+            <template v-slot:name>SROI+社會使命工作坊 </template>
+            <template v-slot:spaker>侯家楷</template>
+          </Agenda-item>
+          <Agenda-item background-color="#4CE7FF" event-type="live" min-height="150px">
+            <template v-slot:time>18:30-20:30 </template>
+            <template v-slot:name>社會事開講(BOF) </template>
+            <template v-slot:spaker>名單會更新，8~10組</template>
+          </Agenda-item>
+        </div>
       </div>
       <div class="agenda-date-item" id="date-11-28">
         <div class="border-item"></div>
@@ -97,7 +158,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
             <template v-slot:time>10:00-12:00 </template>
             <template v-slot:name>市集活動 </template>
           </Agenda-item>
-          <Agenda-item background-color="#E6E6E6">
+          <Agenda-item background-color="#E6E6E6" intermission>
             <template v-slot:time>12:00-13:30</template>
             <template v-slot:name>午餐/休息 </template>
           </Agenda-item>
@@ -139,6 +200,9 @@ export default {}
 			text-align: center
 			padding: 15px 0
 			text-decoration: none
+			@media (max-width: 768px)
+				font-size: 14px
+				padding: 5px 0
 			&:nth-child(1)
 				border-radius: 16px 0 0 0
 				background-color: #FFC817
@@ -155,6 +219,9 @@ export default {}
 		scroll-snap-type: x mandatory
 		scroll-behavior: smooth
 		-webkit-overflow-scrolling: touch
+
+		@media (max-width: 768px)
+			background-color: #fff
 		.agenda-date-item
 			scroll-snap-align: start
 			flex-shrink: 0
@@ -167,7 +234,10 @@ export default {}
 			.border-item
 				height: 24px
 				background-color: var(--border-color)
-
+				@media (max-width: 768px)
+					height: 12px
 			.agenda-container
 				padding: 42px 72px
+				@media (max-width: 768px)
+					padding: 0
 </style>
