@@ -4,7 +4,7 @@
 import Header from './components/Header.vue'
 import Intro from './components/Intro.vue'
 import Features from './components/Features.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Agenda from './components/Agenda.vue'
 import Footer from './components/Footer.vue'
 </script>
 
@@ -12,7 +12,7 @@ import Footer from './components/Footer.vue'
   <Header />
   <Intro />
   <Features />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <Agenda />
   <Footer />
 </template>
 <style lang="sass">
@@ -21,4 +21,5 @@ import Footer from './components/Footer.vue'
   --container-max-width: calc(100vw - 20px)
 body
   font-family: 'Noto Sans TC', sans-serif
+  box-sizing: border-box
 </style>

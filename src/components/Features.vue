@@ -55,11 +55,12 @@
 		.feature-items
 			display: grid
 			max-width: 900px
-			margin: 50px auto
+			margin: 100px auto
 			gap: 80px
 			grid-template-columns: repeat(3, 1fr)
 			grid-template-row: repeat(2, 1fr)
 			@media (max-width: 768px)
+				margin: 50px auto
 				gap: 40px 0
 				grid-template-columns: repeat(2, 1fr)
 				grid-template-row: repeat(3, 1fr)
