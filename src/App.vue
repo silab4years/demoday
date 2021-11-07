@@ -23,5 +23,6 @@ html
   scroll-behavior: smooth
 body
   font-family: 'Noto Sans TC', sans-serif
+*
   box-sizing: border-box
 </style>

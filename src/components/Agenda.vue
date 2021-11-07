@@ -183,6 +183,9 @@ export default {}
 	max-width: var(--container-max-width)
 	margin: 0 auto
 	padding-bottom: 120px
+	--date-item-height: 100px
+	@media (max-width: 768px)
+		--date-item-height: 30px
 	.header
 		font-size: 64px
 		text-align: center
@@ -194,12 +197,18 @@ export default {}
 	.date-switch
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
+		z-index: 1
+		position: absolute
+		width: var(--container-width)
+		max-width: var(--container-max-width)
 		.date-item
 			font-size: 48px
 			color: #fff
-			text-align: center
-			padding: 15px 0
 			text-decoration: none
+			display: flex
+			align-items: center
+			justify-content: center
+			height: var(--date-item-height)
 			@media (max-width: 768px)
 				font-size: 14px
 				padding: 5px 0
@@ -213,13 +222,12 @@ export default {}
 				background-color: #FF9365
 	.agenda-date-items
 		background-color: #EEEEEE
-		border-radius: 0 0 16px 16px
+		border-radius: 16px
 		display: flex
 		overflow-x: auto
 		scroll-snap-type: x mandatory
 		scroll-behavior: smooth
 		-webkit-overflow-scrolling: touch
-
 		@media (max-width: 768px)
 			background-color: #fff
 		.agenda-date-item
@@ -232,7 +240,8 @@ export default {}
 			&:nth-child(3)
 				--border-color: #FF9365
 			.border-item
-				height: 24px
+				height: calc(var(--date-item-height) + 24px)
+				border-radius: 16px 16px 0 0
 				background-color: var(--border-color)
 				@media (max-width: 768px)
 					height: 12px
