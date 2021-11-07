@@ -2,7 +2,7 @@
   <div
     class="agenda-item"
     :class="[`event-${eventType}`, intermission ? 'intermission' : null]"
-    :style="{ backgroundColor, '--min-height': `calc(${minHeight} - 20px)` }"
+    :style="{ backgroundColor, '--min-height': minHeight }"
   >
     <div class="time">
       <div class="dot"></div>

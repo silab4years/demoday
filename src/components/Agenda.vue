@@ -244,7 +244,7 @@ export default {}
 				border-radius: 16px 16px 0 0
 				background-color: var(--border-color)
 				@media (max-width: 768px)
-					height: 12px
+					height: calc(var(--date-item-height) + 12px)
 			.agenda-container
 				padding: 42px 72px
 				@media (max-width: 768px)
