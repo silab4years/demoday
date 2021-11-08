@@ -6,6 +6,7 @@ import Intro from './components/Intro.vue'
 import Features from './components/Features.vue'
 import Agenda from './components/Agenda.vue'
 import Guidebook from './components/Guidebook.vue'
+import Teams from './components/Teams.vue'
 import Footer from './components/Footer.vue'
 </script>
 
@@ -15,6 +16,7 @@ import Footer from './components/Footer.vue'
   <Features />
   <Agenda />
   <Guidebook />
+  <Teams />
   <Footer />
 </template>
 <style lang="sass">

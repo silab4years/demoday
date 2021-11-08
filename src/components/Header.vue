@@ -7,7 +7,7 @@
       <div class="nav">
         <a class="nav-item" href="#agenda">活動議程</a>
         <a class="nav-item" href="#guidebook">導覽手冊</a>
-        <a class="nav-item" href="#">社創團隊</a>
+        <a class="nav-item" href="#teams">社創團隊</a>
         <a class="nav-item" href="#footer">主辦單位</a>
       </div>
     </div>
