@@ -1,5 +1,5 @@
 <template>
-  <div id="intro">
+  <section id="intro">
     <div class="intro-container">
       <div class="content">
         <img src="../assets/intro/logo.png" />
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

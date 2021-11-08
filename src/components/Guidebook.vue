@@ -1,5 +1,5 @@
 <template>
-  <div id="guidebook">
+  <section id="guidebook">
     <div class="guidebook-container">
       <div class="header">導覽手冊</div>
       <div class="guidebook-box"></div>
@@ -7,7 +7,7 @@
     <div class="cover">
       <img src="../assets/guidebook/cover.png" alt="" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="sass">

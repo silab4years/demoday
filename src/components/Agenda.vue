@@ -6,7 +6,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
 </script>
 
 <template>
-  <div id="agenda">
+  <section id="agenda">
     <div class="header">活動議程</div>
     <div class="dot-example">
       <div class="dot-item online">
@@ -183,7 +183,7 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
     <div class="cover">
       <img src="../assets/agenda/cover.png" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

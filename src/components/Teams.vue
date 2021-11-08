@@ -1,9 +1,9 @@
 <template>
-  <div id="teams">
+  <section id="teams">
     <div class="teams-container">
       <div class="header">參展團隊</div>
     </div>
-  </div>
+  </section>
 </template>
  
 <style lang="sass">

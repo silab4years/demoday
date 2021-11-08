@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <section id="header">
     <div class="header-container">
       <div class="logo">
         <img src="../assets/header/logo.png" />
@@ -11,7 +11,7 @@
         <a class="nav-item" href="#footer">主辦單位</a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

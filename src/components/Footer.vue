@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">
+  <section id="footer">
     <div class="footer-container">
       <div class="header">主辦單位聯絡資訊</div>
       <div class="content">
@@ -30,7 +30,7 @@
         <img src="../assets/footer/logo.png" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style lang="sass">
 #footer

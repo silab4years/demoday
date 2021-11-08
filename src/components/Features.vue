@@ -1,5 +1,5 @@
 <template>
-  <div id="features">
+  <section id="features">
     <div class="features-container">
       <div class="header">Social Innovation 2021 in Taiwan</div>
       <div class="feature-items">
@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
  
 
