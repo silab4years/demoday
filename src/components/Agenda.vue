@@ -8,6 +8,16 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
 <template>
   <div id="agenda">
     <div class="header">活動議程</div>
+    <div class="dot-example">
+      <div class="dot-item online">
+        <div class="dot"></div>
+        線上活動
+      </div>
+      <div class="dot-item live">
+        <div class="dot"></div>
+        現場活動
+      </div>
+    </div>
     <div class="date-switch">
       <a class="date-item" href="#date-11-26">11.26</a>
       <a class="date-item" href="#date-11-27">11.27</a>
@@ -198,6 +208,28 @@ export default {}
 		@media (max-width: 768px)
 			font-size: 36px
 			margin: 50px 0
+	.dot-example
+		margin: 24px 0
+		display: flex
+		justify-content: right
+		gap: 24px
+		@media (max-width: 768px)
+			display: none
+		.dot-item
+			display: flex
+			align-items: center
+			font-size: 36px
+			--dot-color: #000
+			&.online
+				--dot-color: #4CE7FF
+			&.live
+				--dot-color: #FF6422
+			.dot
+				width: 24px
+				height: 23px
+				border-radius: 50%
+				margin-right: 8px
+				background-color: var(--dot-color)
 	.date-switch
 		display: grid
 		grid-template-columns: repeat(3, 1fr)

@@ -18,7 +18,6 @@
     @media (max-width: 768px)
         padding: 0
     .guidebook-container
-        margin: 0 auto
         .header
             font-size: 64px
             text-align: center
@@ -31,7 +30,9 @@
                 margin-bottom: 0
         .guidebook-box
             height: calc(100vh - 300px)
-            width: 100%
+            width: var(--container-width)
+            max-width: var(--container-max-width)
+            margin: 0 auto
             background-color: #fff
             border-radius: 30px
             @media (max-width: 768px)
