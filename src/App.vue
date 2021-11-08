@@ -21,8 +21,8 @@ import Footer from './components/Footer.vue'
 </template>
 <style lang="sass">
 \:root
-  --container-width: 1440px
-  --container-max-width: calc(100vw - 20px)
+  --container-width: calc(100vw - 40px)
+  --container-max-width: 1440px
 html
   scroll-behavior: smooth
 body
