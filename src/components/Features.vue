@@ -54,9 +54,10 @@
 				font-size: 24px
 		.feature-items
 			display: grid
-			max-width: 900px
+			max-width: 1200px
+			width: 100%
 			margin: 100px auto
-			gap: 80px
+			gap: 80px 20px
 			grid-template-columns: repeat(3, 1fr)
 			grid-template-row: repeat(2, 1fr)
 			@media (max-width: 768px)
@@ -65,6 +66,7 @@
 				grid-template-columns: repeat(2, 1fr)
 				grid-template-row: repeat(3, 1fr)
 			.feature-item
+				width: 100%
 				.icon
 					width: 120px
 					height: 120px
@@ -77,16 +79,15 @@
 					color: #fff
 					font-size: 72px
 				&:nth-child(2n)
-
 					.icon
 						background-color: #4CE7FF
-
 				.title
 					color: #000
 					font-size: 24px
 					font-weight: bold
 					text-align: center
 					margin-top: 20px
+					letter-spacing: 4px
 					@media (max-width: 768px)
 						font-size: 18px
 </style>
