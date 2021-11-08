@@ -204,10 +204,10 @@ export default {}
 		font-size: 64px
 		text-align: center
 		font-weight: bold
-		margin: 100px 0
+		padding: 100px 0
 		@media (max-width: 768px)
 			font-size: 36px
-			margin: 50px 0
+			padding: 50px 0
 	.dot-example
 		margin: 24px 0
 		display: flex
