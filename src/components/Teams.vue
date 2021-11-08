@@ -9,7 +9,7 @@
 <style lang="sass">
 #teams
     position: relative
-    &::before
+    &::before, &::after
         content: ''
         background-image: url('../assets/teams/cover.png')
         background-size: contain
@@ -17,16 +17,12 @@
         height: 289px
         width: 760px
         position: absolute
+        @media (max-width: 768px)
+            display: none
+    &::before
         top: 0
         right: 0
     &::after
-        content: ''
-        background-image: url('../assets/teams/cover.png')
-        background-size: contain
-        background-repeat: no-repeat
-        height: 289px
-        width: 760px
-        position: absolute
         bottom: 0
         left: 0
         transform: rotate(180deg)
