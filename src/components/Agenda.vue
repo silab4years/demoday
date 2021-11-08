@@ -170,6 +170,9 @@ import AgendaTitle from './Agenda/AgendaTitle.vue'
         </div>
       </div>
     </div>
+    <div class="cover">
+      <img src="../assets/agenda/cover.png" />
+    </div>
   </div>
 </template>
 
@@ -183,6 +186,7 @@ export default {}
 	max-width: var(--container-max-width)
 	margin: 0 auto
 	padding-bottom: 120px
+	position: relative
 	--date-item-height: 100px
 	@media (max-width: 768px)
 		--date-item-height: 30px
@@ -228,8 +232,10 @@ export default {}
 		scroll-snap-type: x mandatory
 		scroll-behavior: smooth
 		-webkit-overflow-scrolling: touch
+		padding-bottom: 300px
 		@media (max-width: 768px)
 			background-color: #fff
+			padding-bottom: 100px
 		.agenda-date-item
 			scroll-snap-align: start
 			flex-shrink: 0
@@ -249,4 +255,16 @@ export default {}
 				padding: 42px 72px
 				@media (max-width: 768px)
 					padding: 0
+	.cover
+		position: absolute
+		bottom: -2px
+		right: 0
+		left: 0
+		margin: auto
+		width: 100%
+		text-align: center
+		img
+			width: 800px
+			@media (max-width: 768px)
+				width: 350px
 </style>
