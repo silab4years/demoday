@@ -5,19 +5,19 @@
       <div class="content">
         <div class="adviser">
           <div class="title">指導單位</div>
-          <img src="../assets/footer/I 1.png" />
+          <img src="../assets/footer/I1.png" />
         </div>
         <div class="implementer">
           <div class="title">承辦單位</div>
-          <img src="../assets/footer/J 1.png" />
+          <img src="../assets/footer/J1.png" />
         </div>
         <div class="co-organizer">
           <div class="title">協辦單位</div>
-          <img src="../assets/footer/A 1.png" />
-          <img src="../assets/footer/D 2.png" style="height: 20px" />
-          <img src="../assets/footer/B 1.png" />
-          <img src="../assets/footer/C 1.png" />
-          <img src="../assets/footer/E 1.png" />
+          <img src="../assets/footer/A1.png" />
+          <img src="../assets/footer/D2.png" style="height: 20px" />
+          <img src="../assets/footer/B1.png" />
+          <img src="../assets/footer/C1.png" />
+          <img src="../assets/footer/E1.png" />
         </div>
         <div class="subcontractor">
           <div class="title">協力廠商</div>

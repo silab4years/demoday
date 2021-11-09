@@ -25,7 +25,7 @@ export default {}
 		margin: 0 auto
 		position: relative
 		// background
-		background-image: url(../assets/intro/cover.png)
+		background-image: url(../assets/intro/cover.webp)
 		background-position: bottom center
 		background-repeat: no-repeat
 		background-size: contain
