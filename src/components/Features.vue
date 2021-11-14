@@ -120,6 +120,7 @@
 			font-size: 42px
 			font-weight: bold
 			text-align: center
+			line-height: 1.5
 			@media (max-width: 1024px)
 				display: none
 			&.mobile
@@ -164,10 +165,10 @@
 					font-size: 24px
 					align-self: flex-end
 					text-align: right
+					letter-spacing: 4px
 					&.mobile
 						display: none
 						font-size: 12px
-						letter-spacing: 4px
 						margin-top: 32px
 						@media (max-width: 1024px)
 							display: block
