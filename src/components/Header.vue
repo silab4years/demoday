@@ -5,10 +5,10 @@
         <img src="../assets/header/logo.png" />
       </div>
       <div class="nav">
-        <a class="nav-item" href="#agenda">活動議程</a>
-        <a class="nav-item" href="#guidebook">導覽手冊</a>
-        <a class="nav-item" href="#teams">社創團隊</a>
-        <a class="nav-item" href="#footer">主辦單位</a>
+        <a class="nav-item" href="#agenda">活動<br class="divider" />議程</a>
+        <a class="nav-item" href="#guidebook">導覽<br class="divider" />手冊</a>
+        <a class="nav-item" href="#teams">社創<br class="divider" />團隊</a>
+        <a class="nav-item" href="#footer">主辦<br class="divider" />單位</a>
       </div>
     </div>
   </section>
@@ -28,15 +28,19 @@ export default {}
 		display: flex
 		justify-content: space-between
 		align-items: center
+		@media (max-width: 768px)
+			height: 70px
 		.logo
 			img
 				height: 50px
+				@media (max-width: 768px)
+					height: 30px
 		.nav
 			display: flex
 			align-items: center
 			gap: 12px
 			@media (max-width: 768px)
-				display: none
+				gap: 9px
 			.nav-item
 				font-size: 14px
 				font-weight: bold
@@ -47,4 +51,15 @@ export default {}
 				background-color: #FF6422
 				letter-spacing: 4px
 				text-decoration: none
+				.divider
+					display: none
+				@media (max-width: 768px)
+					font-size: 10px
+					letter-spacing: .2em
+					line-height: 1.5em
+					//width: calc(2em + 24px)
+					padding: 6px 12px
+					padding-right: calc(12px - .2em)
+					.divider
+						display: inline
 </style>
