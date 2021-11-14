@@ -53,8 +53,9 @@ export default {
     height: 289px
     width: 760px
     position: absolute
-  @media (max-width: 768px)
-    display: none
+    @media (max-width: 768px)
+      height: 143px
+      width: 376px
   &::before
     top: 0
     right: 0
@@ -71,11 +72,19 @@ export default {
       font-weight: bold
       padding: 100px 0
       text-align: center
+      @media (max-width: 768px)
+        font-size: 36px
+        padding: 50px 0
+        padding-top: 70px
     .teams
       display: grid
       gap: 32px
       grid-template-columns: repeat(3, 1fr)
-      padding-bottom: 300px
+      @media (min-width: 769px)
+        padding-bottom: 300px
+      @media (max-width: 768px)
+        padding-bottom: 150px
+        grid-template-columns: 1fr
       .team-item
         border: 1px solid rgba(0, 0, 0, 0.1)
         border-radius: 16px
