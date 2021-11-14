@@ -89,7 +89,11 @@ export default {}
 						background: #FF6900
 						color: #fff
 						line-height: 1.5
-
+					&:hover
+						opacity: 0.8
+					&:active
+						transform: scale(0.95)
+						transition: transform 0.2s ease-in-out
 					@media (max-width: 1024px)
 						width: 200px
 
