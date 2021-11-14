@@ -112,7 +112,7 @@
 		margin: 0 auto
 		padding: 100px 0
 
-		@media (max-width: 768px)
+		@media (max-width: 1024px)
 			padding: 50px 0
 
 		.header
@@ -120,7 +120,7 @@
 			font-size: 42px
 			font-weight: bold
 			text-align: center
-			@media (max-width: 768px)
+			@media (max-width: 1024px)
 				display: none
 			&.mobile
 				display: none
@@ -128,22 +128,21 @@
 				line-height: 2
 				.subtitle
 					font-size: 20px
-				@media (max-width: 768px)
+				@media (max-width: 1024px)
 					display: block
 
 		.feature-items
 			margin-top: 50px
 			display: grid
-			grid-template-columns: auto
-			grid-template-rows: auto
 			grid-template-areas: "game store store store openhouse openhouse" "exhibition exhibition workshop workshop workshop workshop"
 			gap: 36px
-			@media (max-width: 768px)
+			@media (max-width: 1024px)
 				grid-template-areas: "game store" "exhibition store" "exhibition workshop" "openhouse workshop"
 				grid-template-columns: 1fr 1fr
 				gap: 24px
 				max-width: 400px
 				margin: 0 auto
+				margin-top: 50px
 			.feature-item
 				padding: 24px
 				border-radius: 24px
@@ -153,11 +152,11 @@
 				display: flex
 				flex-direction: column
 
-				@media (max-width: 768px)
+				@media (max-width: 1024px)
 					padding: 12px
 				.title
 					font-size: 48px
-					@media (max-width: 768px)
+					@media (max-width: 1024px)
 						font-size: 24px
 				.spacer
 					flex: 1
@@ -170,10 +169,10 @@
 						font-size: 12px
 						letter-spacing: 4px
 						margin-top: 32px
-						@media (max-width: 768px)
+						@media (max-width: 1024px)
 							display: block
 
-					@media (max-width: 768px)
+					@media (max-width: 1024px)
 						display: none
 				&:nth-child(1)
 					grid-area: game
@@ -186,13 +185,13 @@
 					grid-area: store
 					background-color: #4ce7ff
 					box-shadow: longshadow(darken(#499cff,12%),#499cff, 500, 0.3)
-					@media (max-width: 768px)
+					@media (max-width: 1024px)
 						z-index: 1
 				&:nth-child(3)
 					grid-area: openhouse
 					background-color: #ff6900
 					box-shadow: longshadow(darken(#ff9431,12%),#ff9431, 500, 0.3)
-					@media (max-width: 768px)
+					@media (max-width: 1024px)
 						z-index: 1
 				&:nth-child(4)
 					grid-area: exhibition
@@ -202,6 +201,6 @@
 					grid-area: workshop
 					background-color: #ba37f8
 					box-shadow: longshadow(darken(#b64fff,12%),#b64fff, 500, 0.3)
-					@media (max-width: 768px)
+					@media (max-width: 1024px)
 						z-index: 1
 </style>
