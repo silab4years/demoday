@@ -25,8 +25,10 @@ import Footer from './components/Footer.vue'
   --container-max-width: 1440px
 html
   scroll-behavior: smooth
+  overflow-x: hidden
 body
   font-family: 'Noto Sans TC', sans-serif
+  overflow-x: hidden
 *
   box-sizing: border-box
 </style>
