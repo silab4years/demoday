@@ -1,33 +1,34 @@
 <template>
   <section id="footer">
     <div class="footer-container">
-      <div class="header">主辦單位聯絡資訊</div>
       <div class="content">
-        <div class="adviser">
-          <div class="title">指導單位</div>
-          <img src="../assets/footer/I1.png" />
+        <div class="header">主辦單位聯絡資訊</div>
+        <div class="organizer">
+          <div class="title">主辦單位</div>
+          <img src="../assets/footer/organizer.png" />
         </div>
-        <div class="implementer">
-          <div class="title">承辦單位</div>
-          <img src="../assets/footer/J1.png" />
-        </div>
-        <div class="co-organizer">
-          <div class="title">協辦單位</div>
+        <div>
+          <div class="title">執行單位</div>
           <img src="../assets/footer/A1.png" />
           <img src="../assets/footer/D2.png" style="height: 20px" />
           <img src="../assets/footer/B1.png" />
           <img src="../assets/footer/C1.png" />
           <img src="../assets/footer/E1.png" />
         </div>
-        <div class="subcontractor">
-          <div class="title">協力廠商</div>
-          <img src="../assets/footer/F1.png" />
-          <img src="../assets/footer/G.png" />
-          <img src="../assets/footer/H1.png" style="height: 36px" />
+        <div class="implementer">
+          <div class="title">合作單位</div>
+          <div>詳見 Accupass 活動頁面</div>
         </div>
       </div>
-      <div class="logo">
-        <img src="../assets/footer/logo.png" />
+      <div class="contact">
+        <img class="logo" src="../assets/footer/logo.png" />
+        <div class="contact-title">CONTACT US</div>
+        <img class="contact-logo" src="../assets/footer/J1.png" />
+        <div class="contact-info">
+          (02)6631-5055<br />
+          socinlab@gmail.com<br />
+          台北市仁愛路三段99號
+        </div>
       </div>
     </div>
   </section>
@@ -41,57 +42,74 @@
 		width: var(--container-width)
 		max-width: var(--container-max-width)
 		margin: 0 auto
-		padding: 50px 0
+		padding-top: 50px
+		padding-bottom: 16px
 		position: relative
+		display: grid
+		grid-template-columns: 1fr 1fr
 		@media (max-width: 768px)
 			padding: 24px 0
-		.header
-			font-size: 48px
-			font-weight: bold
-
-			@media (max-width: 768px)
-				font-size: 24px
-				text-align: center
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr 1fr
 		.content
-			margin-top: 20px
-
-			@media (min-width: 769px)
-				display: grid
-				max-width: 730px
-				grid-template-columns: 1fr 1fr 1fr
-				grid-template-rows: auto auto
-				grid-gap: 20px
-				grid-template-areas: "adviser implementer subcontractor" "organizer organizer subcontractor"
+			@media (max-width: 768px)
+				text-align: center
 			.title
 				margin: 20px 0
 				font-size: 18px
+				letter-spacing: 4px
 				font-weight: bold
 			img
 				height: 40px
 				object-fit: contain
 				margin: 5px
-			.adviser
-				grid-area: adviser
+			.header
+				font-size: 48px
+				font-weight: bold
+				@media (max-width: 768px)
+					font-size: 24px
+					text-align: center
 			.implementer
-				grid-area: implementer
-			.co-organizer
-				grid-area: organizer
-			.subcontractor
-				grid-area: subcontractor
-				img
-					height: 60px
-					margin: 12px
-
-		.logo
-			margin-top: 50px
-			text-align: center
-			@media (min-width: 900px)
-				margin-top: 0
-				position: absolute
-				bottom: 40px
-				right: 40px
-			img
+				display: flex
+				align-items: flex-end
+				letter-spacing: 2px
+				line-height: 2
+				@media (max-width: 768px)
+					display: block
+				.title
+					margin: 0
+					margin-top: 20px
+					margin-right: 20px
+					@media (max-width: 768px)
+						margin-right: 0
+		.contact
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			align-items: flex-end
+			@media (max-width: 768px)
+				justify-content: center
+				align-items: center
+			.logo
 				height: 100px
 				object-fit: contain
-				margin: 0 auto
+				@media (max-width: 768px)
+					margin-top: 20px
+					order: 1
+			.contact-title
+				font-size: 18px
+				font-weight: bold
+				margin: 24px 0
+				letter-spacing: 4px
+			.contact-logo
+				height: 40px
+			.contact-info
+				letter-spacing: 4px
+				margin-top: 20px
+				font-size: 16px
+				font-weight: bold
+				line-height: 2
+				text-align: right
+				@media (max-width: 768px)
+					text-align: center
 </style>

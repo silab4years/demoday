@@ -30,13 +30,14 @@
       @media (max-width: 768px)
         font-size: 36px
     .guidebook-box
-      height: calc(100vh - 300px)
+      height: min(700px, 100vh)
       margin: 0 auto
       background-color: #fff
       border-radius: 30px
       // temp
       background-image: url(../assets/guidebook/coming-soon.png)
       background-size: cover
+      background-position: center
       display: flex
       flex-direction: column
       justify-content: center

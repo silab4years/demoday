@@ -51,6 +51,11 @@ export default {}
 				background-color: #FF6422
 				letter-spacing: 4px
 				text-decoration: none
+				&:hover
+					opacity: 0.8
+				&:active
+					transform: scale(0.95)
+					transition: transform 0.2s ease-in-out
 				.divider
 					display: none
 				@media (max-width: 768px)
