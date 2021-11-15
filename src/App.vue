@@ -8,6 +8,7 @@ import Agenda from './components/Agenda.vue'
 import Guidebook from './components/Guidebook.vue'
 import Teams from './components/Teams.vue'
 import Footer from './components/Footer.vue'
+import TopButton from './components/TopButton.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Footer from './components/Footer.vue'
   <Guidebook />
   <Teams />
   <Footer />
+  <TopButton />
 </template>
 <style lang="sass">
 \:root

@@ -5,7 +5,7 @@
         <div class="header">主辦單位聯絡資訊</div>
         <div class="organizer">
           <div class="title">主辦單位</div>
-          <img src="../assets/footer/organizer.png" />
+          <img src="../assets/footer/organizer.png" style="height: 50px" />
         </div>
         <div class="executive">
           <div class="title" style="width: 100%">執行單位</div>
