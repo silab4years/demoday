@@ -7,13 +7,14 @@
           <div class="title">主辦單位</div>
           <img src="../assets/footer/organizer.png" />
         </div>
-        <div>
-          <div class="title">執行單位</div>
-          <img src="../assets/footer/A1.png" />
-          <img src="../assets/footer/D2.png" style="height: 20px" />
-          <img src="../assets/footer/B1.png" />
-          <img src="../assets/footer/C1.png" />
-          <img src="../assets/footer/E1.png" />
+        <div class="executive">
+          <div class="title" style="width: 100%">執行單位</div>
+          <img src="../assets/footer/D.png" style="height: 30px" />
+          <img src="../assets/footer/A.png" />
+          <img src="../assets/footer/B.png" style="height: 57px" />
+          <img src="../assets/footer/F.png" />
+          <img src="../assets/footer/C.png" style="height: 60px" />
+          <img src="../assets/footer/E.png" style="height: 30px" />
         </div>
         <div class="implementer">
           <div class="title">合作單位</div>
@@ -66,19 +67,27 @@
 			.header
 				font-size: 48px
 				font-weight: bold
+				margin-bottom: 40px
 				@media (max-width: 768px)
 					font-size: 24px
 					text-align: center
-			.implementer
+					margin-bottom: 20px
+			.executive
 				display: flex
-				align-items: flex-end
+				flex-wrap: wrap
+				align-items: center
+				@media (max-width: 768px)
+					justify-content: center
+			.implementer
+				margin-top: 20px
+				display: flex
+				align-items: center
 				letter-spacing: 2px
 				line-height: 2
 				@media (max-width: 768px)
 					display: block
 				.title
 					margin: 0
-					margin-top: 20px
 					margin-right: 20px
 					@media (max-width: 768px)
 						margin-right: 0
