@@ -136,7 +136,7 @@
 			margin-top: 50px
 			display: grid
 			grid-template-areas: "game store store store openhouse openhouse" "exhibition exhibition workshop workshop workshop workshop"
-			gap: 36px
+			gap: 56px
 			@media (max-width: 1024px)
 				grid-template-areas: "game store" "exhibition store" "exhibition workshop" "openhouse workshop"
 				grid-template-columns: 1fr 1fr
@@ -178,30 +178,29 @@
 				&:nth-child(1)
 					grid-area: game
 					background-color: #ff6900
-					box-shadow: longshadow(darken(#ff9431,12%),#ff9431, 500, 0.3)
+					box-shadow: longshadow(#ff9431 ,#ffa600, 500, 0.3)
 					.subtitle.mobile
 						font-size: 8px
-
 				&:nth-child(2)
 					grid-area: store
 					background-color: #4ce7ff
-					box-shadow: longshadow(darken(#499cff,12%),#499cff, 500, 0.3)
+					box-shadow: longshadow(#36c3fe,#3f7eff, 500, 0.3)
 					@media (max-width: 1024px)
 						z-index: 1
 				&:nth-child(3)
 					grid-area: openhouse
 					background-color: #ff6900
-					box-shadow: longshadow(darken(#ff9431,12%),#ff9431, 500, 0.3)
+					box-shadow: longshadow(#ff9431 ,#ffa600, 500, 0.3)
 					@media (max-width: 1024px)
 						z-index: 1
 				&:nth-child(4)
 					grid-area: exhibition
 					background-color: #4ce7ff
-					box-shadow: longshadow(darken(#499cff,12%),#499cff, 500, 0.3)
+					box-shadow: longshadow(#36c3fe,#3f7eff, 500, 0.3)
 				&:nth-child(5)
 					grid-area: workshop
 					background-color: #ba37f8
-					box-shadow: longshadow(darken(#b64fff,12%),#b64fff, 500, 0.3)
+					box-shadow: longshadow(#c853ff, #b54dff, 500, 0.3)
 					@media (max-width: 1024px)
 						z-index: 1
 </style>
