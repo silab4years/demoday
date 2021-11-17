@@ -72,6 +72,8 @@ export default {
       font-weight: bold
       padding: 100px 0
       text-align: center
+      position: relative
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff
       @media (max-width: 768px)
         font-size: 36px
         padding: 50px 0
