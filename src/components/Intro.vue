@@ -26,6 +26,7 @@ export default {}
 		min-height: max(calc(100vh - 100px), 500px)
 		margin: 0 auto
 		position: relative
+		display: flex
 		// background
 		background-image: url(../assets/intro/cover.webp)
 		background-position: bottom center
@@ -38,17 +39,17 @@ export default {}
 			background-size: max(40vw, 700px) auto
 			background-position: bottom right
 		.content
-			padding: 50px 0
+			padding: 100px 0
+			padding-top: 150px
 			max-width: 350px
 			text-align: center
 			margin: 0 auto
 			@media (min-width: 1025px)
 				width: 600px
 				max-width: 50vw
-				position: absolute
-				top: 50%
-				transform: translateY(-60%)
 				margin: initial
+				align-self: center
+				margin-top: -100px
 			img
 				width: 100%
 				&.subtitle
