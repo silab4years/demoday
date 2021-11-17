@@ -41,6 +41,8 @@ export default {}
 			gap: 12px
 			@media (max-width: 768px)
 				gap: 9px
+			@media (max-width: 380px)
+				gap: 5px
 			.nav-item
 				font-size: 14px
 				font-weight: bold
@@ -65,6 +67,15 @@ export default {}
 					//width: calc(2em + 24px)
 					padding: 6px 12px
 					padding-right: calc(12px - .2em)
+					.divider
+						display: inline
+				@media (max-width: 380px)
+					font-size: 10px
+					letter-spacing: .2em
+					line-height: 1.5em
+					//width: calc(2em + 24px)
+					padding: 3px 6px
+					padding-right: calc(6px - .2em)
 					.divider
 						display: inline
 </style>
