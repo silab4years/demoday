@@ -12,7 +12,7 @@
   margin-bottom: -48px
   @media (max-width: 768px)
     margin-top: 16px
-    margin-bottom: 16px
+    margin-bottom: -32px
   .agenda-title
     font-size: 36px
     font-weight: bold
@@ -25,4 +25,5 @@
     margin: 0 auto
     @media (max-width: 768px)
       font-size: 18px
+      padding: 8px 16px
 </style>
