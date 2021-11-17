@@ -2,8 +2,8 @@
   <section id="intro">
     <div class="intro-container">
       <div class="content">
-        <img class="subtitle" src="../assets/intro/subtitle.svg" />
-        <img class="main" src="../assets/intro/img_main_logo.svg" />
+        <img class="subtitle" src="../assets/intro/subtitle.png" />
+        <img class="main" src="../assets/intro/img_main_logo.png" />
         <div class="links">
           <a class="link-item" href="https://gather.town/app/OpSG6nKGfIZ1MfCa/SDGS2021A" target="_blank">Gather 傳送門</a>
           <a class="link-item" href="#guidebook">大會手冊</a>
