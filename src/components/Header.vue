@@ -6,8 +6,8 @@
       </div>
       <div class="nav">
         <a class="nav-item" href="#agenda">活動<br class="divider" />議程</a>
-        <a class="nav-item" href="#guidebook">導覽<br class="divider" />手冊</a>
-        <a class="nav-item" href="#teams">社創<br class="divider" />團隊</a>
+        <a class="nav-item" href="#guidebook">大會<br class="divider" />手冊</a>
+        <a class="nav-item" href="#teams">參展<br class="divider" />團隊</a>
         <a class="nav-item" href="#footer">主辦<br class="divider" />單位</a>
       </div>
     </div>

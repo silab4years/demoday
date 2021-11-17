@@ -1,7 +1,7 @@
 <template>
   <section id="guidebook">
     <div class="guidebook-container">
-      <div class="header">導覽手冊</div>
+      <div class="header">大會手冊</div>
       <div class="guidebook-box">敬請期待</div>
     </div>
     <div class="cover">

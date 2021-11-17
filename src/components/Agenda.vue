@@ -63,7 +63,7 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
             </template>
             <template v-slot:spaker>
               胡耀傑｜圖靈鏈創辦人<br />
-              李振北｜永訊科技<br />
+              李振北｜永訊智庫股份有限公司<br />
               沈怡如｜公益自律聯盟
             </template>
             <template v-slot:action>
@@ -86,7 +86,7 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
             </template>
             <template v-slot:spaker>
               邱明憲｜旅庫彰化<br />
-              王禛壹｜粨種人<br />
+              王禛壹｜粨種人食品股份有限公司<br />
               陳添順｜或者文史書房
             </template>
             <template v-slot:action>
@@ -152,13 +152,13 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
 
           <Agenda-title>台灣暖實力 Demo Show</Agenda-title>
           <Agenda-item background-color="#4CE7FF" event-type="online" min-height="200px">
-            <template v-slot:time>13:40-14:50</template>
+            <template v-slot:time>13:30-14:50</template>
             <template v-slot:name>
               主持人引言 / 分享座談 / 綜合座談<br />
               主持暨與談人 林藝｜寶島淨鄉團發起人
             </template>
             <template v-slot:spaker>
-              魏如君｜手語翻譯協會<br />
+              魏如君｜社團法人台灣手語翻譯協會<br />
               陳世芃｜雞湯來了<br />
               李如寶｜Foodeast
             </template>
@@ -175,7 +175,7 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
 
           <Agenda-title>循環經濟 Demo Show</Agenda-title>
           <Agenda-item background-color="#4CE7FF" event-type="online" min-height="150px">
-            <template v-slot:time>15:00-15:10</template>
+            <template v-slot:time>15:00-16:20</template>
             <template v-slot:name>
               主持人引言 / 分享座談 / 綜合座談<br />
               林藝｜寶島淨鄉團發起人
@@ -395,6 +395,7 @@ export default {
     margin: auto
     width: 100%
     text-align: center
+    pointer-events: none
     img
       width: 800px
       @media (max-width: 768px)
