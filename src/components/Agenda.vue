@@ -61,7 +61,11 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
               主持人引言 / 分享座談 / 綜合座談<br />
               主持暨與談人 林紹偉Social AED
             </template>
-            <template v-slot:spaker> 胡耀傑｜圖靈鏈Turing Chain 李振北｜永訊智庫股份有限公司 沈怡如｜台灣公益團體自律聯盟 </template>
+            <template v-slot:spaker>
+              胡耀傑｜圖靈鏈Turing Chain<br />
+              李振北｜永訊智庫股份有限公司<br />
+              沈怡如｜台灣公益團體自律聯盟
+            </template>
             <template v-slot:action>
               <AgendaActionButton
                 href="https://www.google.com/calendar/render?action=TEMPLATE&text=%E6%9C%AA%E4%BE%86%E6%83%B3%E5%83%8F%20%20Demo%20Show&details=%E4%B8%BB%E6%8C%81%E4%BA%BA%E5%BC%95%E8%A8%80%20/%20%E5%88%86%E4%BA%AB%E5%BA%A7%E8%AB%87%20/%20%E7%B6%9C%E5%90%88%E5%BA%A7%E8%AB%87%0A%E4%B8%BB%E6%8C%81%E6%9A%A8%E8%88%87%E8%AB%87%E4%BA%BA%EF%BC%9A%E6%9E%97%E7%B4%B9%E5%81%89Social%20AED%0A%0A%E8%88%87%E8%AB%87%E4%BA%BA%EF%BC%9A%0A%E8%83%A1%E8%80%80%E5%82%91%EF%BD%9C%E5%9C%96%E9%9D%88%E9%8F%88Turing%20Chain%0A%E6%9D%8E%E6%8C%AF%E5%8C%97%EF%BD%9C%E6%B0%B8%E8%A8%8A%E6%99%BA%E5%BA%AB%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%0A%E6%B2%88%E6%80%A1%E5%A6%82%EF%BD%9C%E5%8F%B0%E7%81%A3%E5%85%AC%E7%9B%8A%E5%9C%98%E9%AB%94%E8%87%AA%E5%BE%8B%E8%81%AF%E7%9B%9F&location=%E7%A4%BE%E6%9C%83%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E4%B8%AD%E5%BF%83&dates=20211126T053000.000Z%2F20211126T065000.000Z"
