@@ -24,9 +24,9 @@ import AgendaActionButton from './Agenda/AgendaActionButton.vue'
       </div>
     </div>
     <div class="date-switch">
-      <a class="date-item" @click="showItem = 1">11.26</a>
-      <a class="date-item" @click="showItem = 2">11.27</a>
-      <a class="date-item" @click="showItem = 3">11.28</a>
+      <a class="date-item" :class="{ active: showItem == 1 }" @click="showItem = 1"><span>11.26</span></a>
+      <a class="date-item" :class="{ active: showItem == 2 }" @click="showItem = 2"><span>11.27</span></a>
+      <a class="date-item" :class="{ active: showItem == 3 }" @click="showItem = 3"><span>11.28</span></a>
     </div>
     <div class="border-item" :style="{ '--border-color': ['#000', '#ffc817', '#ff6422', '#ff9365'][showItem] }"></div>
     <transition name="fade" mode="out-in">
@@ -326,6 +326,7 @@ export default {
       height: var(--date-item-height)
       border-radius: 8px 8px 0 0
       cursor: pointer
+      transition: all 0.3s ease
       @media (max-width: 768px)
         font-size: 14px
         padding: 5px 0
@@ -341,8 +342,26 @@ export default {
         background-color: #FF9365
         @media (min-width: 769px)
           border-radius: 0 16px 0 0
-      &:hover
-        color: rgba(255, 255, 255, 0.8)
+      &>span
+        transition: all 0.3s ease
+        position: relative
+        &::before
+          content: ""
+          position: absolute
+          //underline
+          width: 100%
+          height: 2.5px
+          background-color: #fff
+          bottom: -2px
+          opacity: 0
+          transition: all 0.3s ease
+          transform: translateY(10px) scaleY(0.5)
+      &:not(.active):hover
+        box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.05)
+        span
+          &::before
+            opacity: 1
+            transform: translateY(0)
 
   .border-item
     height: 24px
