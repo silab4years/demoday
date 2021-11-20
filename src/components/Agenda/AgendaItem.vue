@@ -51,6 +51,7 @@ export default {
   padding: 10px 36px
   border-radius: 12px
   line-height: 1.5
+  gap: 12px
   &.event-online
     --event-color: #4CE7FF
   &.event-live
@@ -58,7 +59,9 @@ export default {
   &.with-action
     grid-template-columns: 300px 1fr 1fr 100px
     grid-template-areas: "time name spaker action"
-    gap: 12px
+  &.with-action.intermission
+    grid-template-columns: 300px 1fr 100px
+    grid-template-areas: "time name action"
   @media (min-width: 769px)
     min-height: var(--min-height)
   @media (max-width: 1440px)
@@ -68,7 +71,9 @@ export default {
     &.with-action
       grid-template-columns: 200px 1fr 1fr 100px
       grid-template-areas: "time name spaker action"
-      gap: 12px
+    &.with-action.intermission
+      grid-template-columns: 200px 1fr 100px
+      grid-template-areas: "time name action"
   @media (max-width: 768px)
     font-size: 14px
     padding: 8px 16px
@@ -77,7 +82,6 @@ export default {
     &.with-action
       grid-template-columns: repeat(2, 1fr) 55px
       grid-template-areas: "time spaker action" "name spaker action"
-      gap: 12px
     &.intermission
       grid-template-areas: "time name"
       .name

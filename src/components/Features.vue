@@ -73,9 +73,9 @@
             工作坊
           </div>
           <div class="spacer" />
-          <div class="subtitle">五場社創講座及工作坊</div>
+          <div class="subtitle">四場社創講座及工作坊</div>
           <div class="subtitle mobile">
-            五場<br />
+            四場<br />
             社創講座及<br />
             工作坊
           </div>
