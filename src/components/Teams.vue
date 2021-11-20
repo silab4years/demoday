@@ -25,7 +25,7 @@
           <div class="spacer" />
           <div class="actions">
             <a :href="team.link" target="_blank" class="action-link"> 團隊介紹 </a>
-            <a :href="team.videoLink" target="_blank" class="action-link" v-if="team.videoLink"> 影音簡介 </a>
+            <a :href="team.videoLink" target="_blank" class="action-link video" v-if="team.videoLink"> 影音簡介 </a>
           </div>
         </div>
       </div>
@@ -147,8 +147,8 @@ export default {
           flex: 1
         .actions
           display: flex
-          justify-content: space-between
           padding: 0 16px 16px 16px
+          gap: 16px
           .action-link
             font-size: 14px
             font-weight: bold
@@ -159,6 +159,8 @@ export default {
             color: #000
             border-radius: 8px
             text-decoration: none
+            &.video
+              background-color: #FFD347
             &:hover
               opacity: 0.8
             &:active
